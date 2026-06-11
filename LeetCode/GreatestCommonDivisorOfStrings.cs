@@ -32,8 +32,14 @@
             }
             return a;
         }
-    }
 
+        public static int GCDRecursive(int a, int b)
+        {
+            if (b == 0)
+                return a;
+            return GCDRecursive(b, a % b);
+        }
+    }
 }
 
 //🧮 O que é o GCD?
